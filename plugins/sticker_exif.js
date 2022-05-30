@@ -37,7 +37,7 @@ let ur = '/apps/' + HEROKU.APP_NAME;
 Module({
     pattern: 'take ?(.*)',
     fromMe: a,
-    desc: 'Changes sticker/audio pack & author name. Title, artist, thumbnail etc.'
+    desc: 'عمل ملصق باسمك.'
 }, (async (m, match) => {
     if (!m.reply_message.data.quotedMessage) return await m.sendMessage('_Reply to an audio or a sticker_')
     var audiomsg = m.reply_message.audio;
@@ -118,7 +118,7 @@ await he.patch(ur + '/config-vars', { body: {['AUDIO_DATA']: qu[1]}});}));
 Module({
     pattern: 'mp4 ?(.*)',
     fromMe: a,
-    desc: 'Converts animated sticker to video'
+    desc: 'تحويل ملصقات متحركة الى فيديو'
 }, (async (m, t) => {
     if (m.reply_message.sticker) {
         var q = await saveMessage(m.reply_message);
