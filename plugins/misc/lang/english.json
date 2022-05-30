@@ -189,7 +189,7 @@
             "YTV_DESC": "Select & download yt videos in available quality formats"
         },
         "sticker": {
-            "STICKER_DESC": "Creates stickers. Reply to media.",
+            "STICKER_DESC": "باش تصايب ملصق.",
             "NEED_REPLY": "Reply to a photo or short video"
         },
         "system_stats": {
